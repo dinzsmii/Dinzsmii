@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>One more thing…</title>
+
+<style>
+body {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    background-color: #ffe6f2;
+    padding: 80px 30px;
+}
+
+button {
+    padding: 14px 25px;
+    border-radius: 30px;
+    border: none;
+    background-color: #ffc0cb;
+    font-size: 15px;
+    cursor: pointer;
+    margin: 10px;
+}
+
+button:hover {
+    background-color: #ffb6c1;
+}
+</style>
+</head>
+
+<body>
+
+<h2>Before I go… 👀</h2>
+
+<p>
+Before I go, I want to say something clearly.<br><br>
+
+What I said last time — and the blocking — were not meant to be disrespectful.
+It came from a sudden moment and a bit of jealousy.
+I admit I handled it poorly.<br><br>
+
+I felt like I should clarify things because it seemed unfinished and too childish.<br><br>
+
+Like you, I don’t usually do this.
+But this time something pushed me to take the chance and apologize for how I handled things.<br><br>
+
+Even if neither of us was 100% perfect in this situation,
+I just wanted to break the silence and open up.<br><br>
+
+That’s it.<br><br>
+
+The door is open from my side.
+If you ever feel like talking, I’m open to it.
+Take your time — just let me know.
+</p>
+
+<br>
+
+<h3>Apology status?</h3>
+
+<button onclick="accept()">Apology accepted 😌</button>
+<button id="noBtn" onclick="noOption()">No</button>
+<button onclick="dontCare()">I really don’t care 🫡</button>
+
+<br><br>
+
+<button onclick="openForm()">Submit your response</button>
+<button onclick="leaveIt()">Let’s leave it</button>
+<button onclick="openWhatsApp()">Reply directly</button>
+
+<script>
+
+function accept(){
+    alert("That’s appreciated. Very brave move 😌");
+}
+
+function noOption(){
+    alert("Just kidding, it wasn’t even an option 😏");
+    document.getElementById("noBtn").style.display = "none";
+}
+
+function dontCare(){
+    alert("Message received and felt personally 🫡");
+}
+
+function leaveIt(){
+    alert("No worries. Take care 🎀");
+}
+
+function openForm(){
+    window.open("https://forms.gle/X5M7cz9JjcUD2EaD6","_blank");
+}
+
+function openWhatsApp(){
+    window.open("https://wa.me/94775421558","_blank");
+}
+
+</script>
+
+</body>
+</html>
