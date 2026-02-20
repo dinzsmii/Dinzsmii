@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>A Small Note 🎂</title>
+
+<style>
+body {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    padding: 50px;
+    background-color: #fff0f5;
+}
+
+button {
+    padding: 14px 28px;
+    margin: 15px;
+    border-radius: 30px;
+    border: none;
+    background-color: #ffc0cb;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #ffb6c1;
+}
+
+.arrow {
+    font-size: 40px;
+    animation: bounce 1s infinite;
+}
+
+@keyframes bounce {
+    0%,100% { transform: translateY(0); }
+    50% { transform: translateY(10px); }
+}
+</style>
+</head>
+
+<body>
+
+<h2>A Small Note 🎂</h2>
+
+<p>
+I hope today brings you a moment to pause and feel proud of how far you have come. 👏🥂<br><br>
+I genuinely wish that everything you have been working toward returns to you in the best form.<br><br>
+Sending positive energy your way today 🙋‍♀️✨<br><br>
+And I wish you many many peaceful birthdays to celebrate ahead 🎀
+</p>
+
+<p>
+Okay… I’m singing this in my head right now 🎶<br><br>
+
+Happy Birthday to you!<br>
+Happy Birthday to you!!<br>
+Happy Birthday 🦒!!!<br>
+Happy Birthday to you!!!!<br><br>
+
+👏🏼👏🏼👏🏼👏🏼👏🏼
+</p>
+
+<button onclick="claimEnergy()">Claim your positive energy ✨</button>
+
+<div id="nextSection" style="display:none;">
+    <div class="arrow">⬇️</div>
+    <p>Wait… just a second 👀🎀</p>
+    <button onclick="goNext()">Continue</button>
+</div>
+
+<script>
+function claimEnergy() {
+    alert("Energy received. Use it wisely 🙋‍♀️👏🏼");
+    document.getElementById("nextSection").style.display = "block";
+}
+
+function goNext() {
+    window.location.href = "apology.html";
+}
+</script>
+
+</body>
+</html>
